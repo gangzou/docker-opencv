@@ -1,6 +1,7 @@
-FROM nuveo/opencv:alpine-python3-base
+#FROM nuveo/opencv:alpine-python3-base
+FROM zougang/alpine-python-opencv:alpine-python3.6-base
 
-ENV OPENCV_VERSION=3.3.0
+ENV OPENCV_VERSION=3.4.1
 
 # Install OpenCV
 RUN mkdir /opt && cd /opt && \
